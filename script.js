@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     let dayNight = document.querySelector(".dayNight");
     let formSection = document.querySelector(".formSection");
+    let banner = document.querySelector(".banner");
 
     dayNight.addEventListener("click", () => {
         formSection.classList.toggle("night");
+        banner.classList.toggle("night");
     });
     let typing = new Typed("#text", {
         strings: ["Anime here!", "Shows here!"],
@@ -121,4 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log('Displaying popup...');
         alert(message);
     }
+
+    
 });

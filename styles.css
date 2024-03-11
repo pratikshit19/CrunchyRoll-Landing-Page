@@ -283,6 +283,11 @@ header ul li a {
     border-color: green;
     outline: 2px solid green;
 }
+
+.content .watchnow a{
+    text-decoration: none;
+    color: white;
+}
 @media screen and (max-width: 768px) {
     .label{
         font-size: 12px;
@@ -332,6 +337,7 @@ header ul li a {
         align-items: center;
     }
     header ul{
+        
         display: flex;
         gap: 20px;
     }
@@ -382,7 +388,7 @@ header ul li a {
     }
     span{
         color: #e68105;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
 }
