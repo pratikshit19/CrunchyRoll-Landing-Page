@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     let dayNight = document.querySelector(".dayNight");
-    let banner = document.querySelector(".banner");
+    let formSection = document.querySelector(".formSection");
 
     dayNight.addEventListener("click", () => {
-        banner.classList.toggle("night");
+        formSection.classList.toggle("night");
     });
     let typing = new Typed("#text", {
         strings: ["Anime here!", "Shows here!"],
@@ -11,16 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
         typeSpeed: 100,
         backSpeed: 50,
         backDelay: 1000,
-    });
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    let dayNight = document.querySelector(".dayNight");
-    let formSection = document.querySelector(".formSection");
-
-    dayNight.addEventListener("click", () => {
-        formSection.classList.toggle("night");
     });
 
     const form = document.getElementById("form");
@@ -33,13 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         if (validateInputs()) {
-            // Save information to localStorage (you can replace this with your preferred method)
+            // Save information to localStorage
             saveInformation(username.value, email.value, password.value);
-
+    
             // Display the "Saved" popup
             displayPopup('Saved');
+    
+            // Log to console for debugging
+            console.log('Saved to localStorage');
+    
+            // Reload the page
+            setTimeout(() => {
+                location.reload();
+            }, 1000);
         }
     });
+
     username.addEventListener('input', () => resetStyles(username));
     email.addEventListener('input', () => resetStyles(email));
     password.addEventListener('input', () => resetStyles(password));
@@ -78,8 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
         return !document.querySelectorAll('.error').length; // Return true if no errors
     }
 
+    // Rest of your code...
+
     function isValidEmail(email) {
-        var reg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1-3}\.[0-9]{1-3}\])|(([a-zA-Z\0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var reg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1-3}\.[0-9]{1-3}\.[0-9]{1-3}\])|(([a-zA-Z\0-9]+\.)+[a-zA-Z]{2,}))$/;
         return reg.test(email);
     }
 
@@ -106,13 +107,18 @@ document.addEventListener("DOMContentLoaded", function () {
         inputControl.classList.remove('error', 'success');
     }
 
+    // Submit button click event
+    
     const saveInformation = (username, email, password) => {
-        // Save information to localStorage (you can replace this with your preferred method)
+        // Save information to localStorage
+        console.log('Saving information to localStorage...')
         const userInfo = { username, email, password };
         localStorage.setItem('userInfo', JSON.stringify(userInfo));
     }
 
     const displayPopup = (message) => {
-        alert(message); // You can replace this with your custom popup/modal logic
+        // You can replace this with your custom popup/modal logic
+        console.log('Displaying popup...');
+        alert(message);
     }
 });

@@ -284,6 +284,30 @@ header ul li a {
     outline: 2px solid green;
 }
 @media screen and (max-width: 768px) {
+    .label{
+        font-size: 12px;
+    }
+    .form-control input{
+        display: flex;
+        border: 1px solid #999;
+        border-radius: 15px;
+        display: block;
+        padding: 12px;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    #form{
+        background: #fff;
+        margin: 0 auto 0 auto;
+        align-items: center;
+        padding: 20px;
+        border-radius:20px;
+        width: 350px;
+        flex-direction: column;
+        justify-content: center;
+        
+        /* display: flex; */
+    }
     .banner{
         position: relative;
         display: flex;
@@ -307,6 +331,10 @@ header ul li a {
         justify-content: space-between;
         align-items: center;
     }
+    header ul{
+        display: flex;
+        gap: 20px;
+    }
     header ul li a {
         text-decoration: none;
         font-weight: 400;
@@ -319,7 +347,7 @@ header ul li a {
 
     .content {
         max-width: 100%;
-        z-index: 0;
+        
     }
     .content button{
         position: relative;
@@ -350,17 +378,11 @@ header ul li a {
         margin-right: auto;
     }
     .ichigo{
-        z-index: 1;
-        display: flex;
-        /* margin-right: 80%; */
-        position: absolute;
-        height: 30%;
-        width: 20%;
-        right:0px; 
+        display: none; 
     }
     span{
         color: #e68105;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
 }
