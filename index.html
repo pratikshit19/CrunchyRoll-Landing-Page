@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crunchyroll clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+</head>
+<body>
+    <!-------------- first section ---------->
+    <section class="banner">
+        <header>
+            <a href="https://www.crunchyroll.com/" class="logo">Crunchyroll</a>
+            <ul>
+                <li><a href="https://www.crunchyroll.com/">Home</a></li>
+                <li><a href="https://www.crunchyroll.com/en/about/">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My Work</a></li>                
+            </ul>
+            <div class="dayNight">
+                <ion-icon name="sunny-outline"></ion-icon>
+                <ion-icon name="moon-outline"></ion-icon>
+            </div>
+            
+        </header>
+        <div class="content">
+            <h2> Watch your favourite<br><span id="text"></span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vel, itaque saepe dignissimos <br>unde illo delectus labore provident laborum, soluta impedit molestiae minima sapiente a quasi. Vel vitae dolore cupiditate?</p>
+            <button>Watch Now</button>
+            <button class="join">
+                <a href="https://www.crunchyroll.com/premium?utm_source=google&utm_medium=paid_cr&utm_campaign=CR-Paid_Google_Web_Conversion_ASIA-IN_Trademark_SVOD&utm_term=crunchyroll%20subscription&referrer=google_paid_cr_CR-Paid_Google_Web_Conversion_ASIA-IN_Trademark_SVOD&gad_source=1&gclid=CjwKCAjw17qvBhBrEiwA1rU9w6EEBhQzJWHi1e4upS0QCf2rvuVpnkcOsFN971mUdYC_O-opoQPRWhoCTm4QAvD_BwE">
+                    Premium
+                </a>
+            </button>
+        </div>
+        <div class="ichigo">
+            <img src="images/ichigo.png">
+        </div>
+        
+    </section>
+
+    <!-------- form section(section-2) ------->
+    <section class="formSection">
+        <div class="container">
+            <form class="form" id="form">
+                <h1>Register Yourself!</h1>
+                <div class="form-control">
+                    <label class="label">Username: </label>
+                    <input type="text" name="" id="username"/>
+                    <span class="error"></span>
+                </div>
+                <div class="form-control">
+                    <label class="label">Email: </label>
+                    <input type="text" name="" id="email"/>
+                    <span class="error"></span>
+                </div>
+                <div class="form-control">
+                    <label class="label">Password: </label>
+                    <input type="text" name="" id="password"/>
+                    <span class="error"></span>
+                </div>
+                <div class="form-control">
+                    <label class="label">Confirm Password: </label>
+                    <input type="text" name="" id="confirm-password"/>
+                    <span class="error"></span>
+                </div>
+                <input type="submit" id="btn" value="submit" name=""/>
+            </form>
+        </div>
+    </section>
+    <section>
+
+    </section>
+
+    
+    
+</body>
+</html>

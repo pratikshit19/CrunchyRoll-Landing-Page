@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=DM+Serif+Display&family=Hammersmith+One&family=Montserrat:wght@400;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sacramento&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.banner.night .card button.join a {
+    color: #e68105;
+}
+
+
+.banner{
+    position: relative;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background: #fff;
+    transition: 0.5s;
+}
+span{
+    color: #e68105;
+    font-size: 2em;
+}
+header {
+    background-color: #e68105;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: 0.5s;
+}
+header ul{
+    display: flex;
+    gap: 40px;
+}
+header ul li{
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #fff;
+}
+.ichigo{
+    display: flex;
+    /* margin-right: 80%; */
+    position: absolute;
+    height: 80%;
+    width: 50%;
+    right:-300px;
+    
+    
+    
+}
+.content{
+    position: relative;
+    max-width: 900px;
+}
+.content h2{
+    font-size: 2.5em;
+    color: #333;
+}
+.content p{
+    color: #666;
+    font-size: 1.2em;
+    transition: 0.5s;
+    margin: 20px 0px 50px;
+}
+.content button{
+    position: relative;
+    background: #e68105;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 1.20em;
+    font-weight: 600;
+    padding: 10px 12px;
+    margin-right: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.content button.join{
+    background: transparent;
+    color: #333;
+}
+.content button.join a{
+    background: transparent;
+    color: #333;
+    text-decoration: none;
+}
+.banner.night .content button.join a{
+    color: #e68105;
+}
+
+.dayNight{
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+    z-index: 1;
+}
+.dayNight ion-icon:nth-child(1), .banner.night .dayNight ion-icon:nth-child(2) {
+    display: none;
+}
+.banner.night .dayNight ion-icon:nth-child(1){
+    display: block;
+}
+.banner.night{
+    background: #000;
+}
+.banner.night .dayNight{
+    background: #444;
+    color: #fff;
+}
+.banner.night header{
+    background: #222;
+}
+.banner.night header,.banner.night .content p,.banner.night .content h2, .banner.night button.join{
+    color: #fff;
+}
+.banner.night header .logo{
+    color: #e68105;
+}
+.formSection.night{
+    background: #222;
+}
+.formSection.night #form{
+    background: #000;
+}
+.formSection.night .form h1{
+    color: #e68105;
+}
+.formSection.night .form label{
+    color: white;
+}
+
+.formSection{
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    min-height:60vh;
+    
+    background: #e68105;
+    transition: 0.5s;
+}
+
+.label{
+    color: black;
+}
+#form{
+    background: #fff;
+    margin: 0 auto 0 auto;
+    align-items: center;
+    padding: 20px;
+    border-radius:20px;
+    width: 500px;
+    flex-direction: column;
+    /* display: flex; */
+}
+.container {
+    
+    align-items: center;
+    
+    margin: 15vh auto 20vh auto;
+    
+}
+.form h1{
+    border-bottom: 1px solid black;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 26px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+.form-control input{
+    display: flex;
+    border: 1px solid #999;
+    border-radius: 15px;
+    display: block;
+    padding: 12px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+#btn{
+    cursor: pointer;
+    display: block;
+    margin-top: 30px auto;
+    background: #e68105;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+}
+.form-control .error{
+    color: red;
+    font-size: small;
+    margin-bottom: 5px;
+    margin-top: 0;
+    display: block;
+}
+
+
+/* ----------------- */
+/* ... Existing CSS ... */
+
+/* ... Existing CSS ... */
+
+.form-control.error input,
+.form-control.success input {
+    outline: none; /* Add this line to remove the default outline */
+}
+
+.form-control.error input {
+    border-color: red;
+    outline: 2px solid red;
+}
+
+.form-control.success input {
+    border-color: green;
+    outline: 2px solid green;
+}
